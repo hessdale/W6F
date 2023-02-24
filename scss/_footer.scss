@@ -1,11 +1,16 @@
 footer {
+    display: grid;
     background-color: #333333;
     padding-top: 30px;
     padding-bottom: 30px;
+    height: 15vh;
+    justify-items: center;
+    align-items: center;
 
     >p {
         color: white;
         text-align: center;
+
     }
 
 }

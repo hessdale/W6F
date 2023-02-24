@@ -3,18 +3,20 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
   justify-items: center;
   align-items: center;
+  height: 10vh;
 }
 header img {
   width: 30px;
 }
-header h1 {
-  color: #333333;
-}
 
 footer {
+  display: grid;
   background-color: #333333;
   padding-top: 30px;
   padding-bottom: 30px;
+  height: 15vh;
+  justify-items: center;
+  align-items: center;
 }
 footer > p {
   color: white;
@@ -22,10 +24,10 @@ footer > p {
 }
 
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: monospace;
   margin: 0;
   padding: 0;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.2px;
   line-height: 25px;
 }
 
@@ -44,8 +46,69 @@ main #profile_pic {
 main #profile_pic > img {
   width: 80%;
 }
+main #details img {
+  width: 80px;
+  margin-top: 10px;
+}
 main #details > div {
   margin-top: 20px;
+}
+main #profile h1 {
+  font-size: 50px;
+}
+main #profile p {
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 575px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(575px, 1fr));
+  }
+  main #profile_pic {
+    text-align: start;
+  }
+  main #profile_pic > img {
+    width: 65%;
+    max-width: 400px;
+  }
+  main p {
+    width: 90%;
+  }
+  main #about_me p {
+    max-width: 70%;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 40px;
+    padding: 100px;
+  }
+  main p {
+    max-width: 80%;
+  }
+  main #profile {
+    display: grid;
+    text-align: center;
+    grid-column: span 3;
+    justify-items: center;
+    align-items: center;
+  }
+  main #profile p {
+    margin-top: 15px;
+  }
+  main #profile_pic {
+    text-align: center;
+  }
+  main #details {
+    margin-left: 50px;
+  }
+  main #about_me p {
+    max-width: 400px;
+    margin-top: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
