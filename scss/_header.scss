@@ -1,0 +1,14 @@
+header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+    justify-items: center;
+    align-items: center;
+
+    img {
+        width: 30px;
+    }
+
+    h1 {
+        color: #333333;
+    }
+}

@@ -1,0 +1,35 @@
+@use "header";
+@use "footer";
+
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 40px;
+
+    article {
+        margin-top: 40px;
+    }
+
+    #profile_pic {
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    #profile_pic>img {
+        width: 80%;
+
+    }
+
+    #details>div {
+        margin-top: 20px;
+    }
+}
